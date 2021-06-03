@@ -119,8 +119,7 @@ class t265undistort :
 if __name__ == '__main__' : 
     WINDOW_TITLE = 'Realsense'
     cv2.namedWindow(WINDOW_TITLE, cv2.WINDOW_NORMAL)
-    pipe = rs.pipeline()
-    t265 = t265undistort(pipe)
+    t265 = t265undistort()
     while True : 
         lim, rim = t265.get_frame()
         cv2.imshow(WINDOW_TITLE, np.hstack((lim, rim)))
