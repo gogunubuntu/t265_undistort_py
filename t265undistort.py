@@ -1,9 +1,7 @@
 import pyrealsense2 as rs
 # Import OpenCV and numpy
 import sys
-sys.path.remove('/opt/ros/kinetic/lib/python2.7/dist-packages')
 import cv2
-sys.path.append('/opt/ros/kinetic/lib/python2.7/dist-packages')
 import numpy as np
 from math import tan, pi
 
